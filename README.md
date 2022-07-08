@@ -1,14 +1,7 @@
-# Cross Modal retrieval Implementation
-| Members                       | Contact | GitHub |
-|:------------------------------|   :---    |   :---    |
-| Igor Ugarte Molinet           | igorugarte.cvm@gmail.com | [igorugarteCVM](https://github.com/igorugarteCVM) | 
-| Juan Antonio Rodríguez García | juanantonio.rodriguez@upf.edu  | [joanrod](https://github.com/joanrod) |
-| Francesc Net Barnés           | francescnet@gmail.com  | [cesc47](https://github.com/cesc47) |
-| David Serrano Lozano          | 99d.serrano@gmail.com | [davidserra9](https://github.com/davidserra9) |
-
+# Image-to-Text and Text-to-Image metric-based model retrieval
 
 ## Introduction
-The objective of this repository is to face the problem of metric learning in the context of cross modal retrieval.
+The objective of this repository is to face the problem of metric learning in the context of cross modal retrieval, both **Image-to-Text and Text-to-Image**.
 
 This problem is posed as constructing a latent space where pairs of images and text captions are projected, following a similarity metric.
 For this purpose, feature embeddings are computed from both the images and the text captions. The embeddings are then projected into a latent space, and the similarity between the embeddings is computed.
@@ -75,6 +68,14 @@ Quantitative results with map are rather poor because the method is not able to 
 We are able to obtain satisfactory qualitative results with VGG and using BERT or FastText. We see that the relevant and high level concepts are captured, but details for a good retrieval are lost.
 Failed experiments: Faster R-CNN embeddings, LSTM FastText aggregation, Resnet50 finetune, VQVAE+BERT, Common Triplet MLP
 Most of our experiments are unsatisfactory, where the Triplet Loss collapses all instances to a single point, hence returns random retrievals
+
+## Contact Information
+| Authors                       | Contact | GitHub |
+|:------------------------------|   :---    |   :---    |
+| Igor Ugarte Molinet           | igorugarte.cvm@gmail.com | [igorugarteCVM](https://github.com/igorugarteCVM) | 
+| Juan Antonio Rodríguez García | juanantonio.rodriguez@upf.edu  | [joanrod](https://github.com/joanrod) |
+| Francesc Net Barnés           | francescnet@gmail.com  | [cesc47](https://github.com/cesc47) |
+| David Serrano Lozano          | 99d.serrano@gmail.com | [davidserra9](https://github.com/davidserra9) |
 
 ## References
 [1] Peter Young, Alice Lai, Micah Hodosh, Julia Hockenmaier; From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions. Transactions of the Association for Computational Linguistics 2014; 2 67–78. doi: https://doi.org/10.1162/tacl_a_00166
